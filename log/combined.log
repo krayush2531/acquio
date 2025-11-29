@@ -1,0 +1,3 @@
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-29T08:28:42.183Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Nov/2025:08:28:42 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0\"","service":"acquio-api","timestamp":"2025-11-29T08:28:42.192Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [29/Nov/2025:08:28:42 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0\"","service":"acquio-api","timestamp":"2025-11-29T08:28:42.275Z"}
