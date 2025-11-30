@@ -62,3 +62,8 @@
 {"level":"info","message":"User sam5@gmail.com created successfully","service":"acquio-api","timestamp":"2025-11-30T09:06:26.984Z"}
 {"level":"info","message":"User registered successfully: sam5@gmail.com","service":"acquio-api","timestamp":"2025-11-30T09:06:26.990Z"}
 {"level":"info","message":"::1 - - [30/Nov/2025:09:06:26 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 98 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T09:06:26.994Z"}
+{"level":"info","message":"User sam5@gmail.com authenticated successfully","service":"acquio-api","timestamp":"2025-11-30T09:41:22.139Z"}
+{"level":"info","message":"User signed in successfully: sam5@gmail.com","service":"acquio-api","timestamp":"2025-11-30T09:41:22.145Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:09:41:22 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 97 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T09:41:22.147Z"}
+{"level":"info","message":"User signed out successfully","service":"acquio-api","timestamp":"2025-11-30T09:42:00.789Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:09:42:00 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 29 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T09:42:00.790Z"}
