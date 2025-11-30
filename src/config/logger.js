@@ -27,12 +27,14 @@ const logger = winston.createLogger({
 // `${info.level}: ${info.message} JSON.stringify({ ...rest }) `
 //
 if (process.env.NODE_ENV !== 'production') {
-  logger.add(new winston.transports.Console({
-    format: winston.format.combine(
+  logger.add(
+    new winston.transports.Console({
+      format: winston.format.combine(
         winston.format.colorize(),
-        winston.format.simple(),
-    ),
-  }));
+        winston.format.simple()
+      ),
+    })
+  );
 }
 
 export default logger;
