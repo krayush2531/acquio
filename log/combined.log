@@ -67,3 +67,64 @@
 {"level":"info","message":"::1 - - [30/Nov/2025:09:41:22 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 97 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T09:41:22.147Z"}
 {"level":"info","message":"User signed out successfully","service":"acquio-api","timestamp":"2025-11-30T09:42:00.789Z"}
 {"level":"info","message":"::1 - - [30/Nov/2025:09:42:00 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 29 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T09:42:00.790Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:50:44.651Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:12:50:44 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0\"","service":"acquio-api","timestamp":"2025-11-30T12:50:44.664Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:12:50:44 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0\"","service":"acquio-api","timestamp":"2025-11-30T12:50:44.776Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:50:47.160Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:12:50:47 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0\"","service":"acquio-api","timestamp":"2025-11-30T12:50:47.163Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:50:53.850Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:12:50:53 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:50:53.852Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:12:51:33 +0000] \"POST /sign-in HTTP/1.1\" 404 147 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:51:33.080Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:12:51:50 +0000] \"POST /sign-up HTTP/1.1\" 404 147 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:51:50.127Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:51:58 +0000] \"POST /sign-up HTTP/1.1\" 404 147 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:51:58.695Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:07 +0000] \"GET /sign-up HTTP/1.1\" 404 146 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:07.345Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:13 +0000] \"POST /sign-up HTTP/1.1\" 404 147 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:13.898Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:19 +0000] \"POST /sign-out HTTP/1.1\" 404 148 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:19.829Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:44.620Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:44 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:44.629Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:45.868Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:45 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:45.873Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:47.115Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:47 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:47.118Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:47.603Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:47 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:47.605Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:48.592Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:48 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:48.594Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:48.703Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:48 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:48.704Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:48.853Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:48 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:48.855Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:49.004Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:49 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:49.005Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:49.162Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:49 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:49.165Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:49.356Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:49 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:49.358Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:49.520Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:49 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:49.522Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:49.720Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:49 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:49.722Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:49.910Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:49 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:49.912Z"}
+{"level":"info","message":"Hello from Acquio!","service":"acquio-api","timestamp":"2025-11-30T12:52:50.109Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:12:52:50 +0000] \"GET / HTTP/1.1\" 200 18 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T12:52:50.110Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:19:57 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:19:57.451Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:20:53 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:53.743Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:20:54 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:54.361Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:20:54 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:54.976Z"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:20:55 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:55.796Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:13:20:56 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:56.818Z"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:20:57.887Z","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:13:20:57 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:57.890Z"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:20:58.566Z","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:13:20:58 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:58.568Z"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:20:59.875Z","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2025:13:20:59 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:20:59.879Z"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:21:00.710Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:21:00 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:21:00.712Z"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:21:00.913Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:21:00 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:21:00.914Z"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:21:01.457Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:21:01 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:21:01.459Z"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquio-api","timestamp":"2025-11-30T13:21:01.600Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [30/Nov/2025:13:21:01 +0000] \"GET /health HTTP/1.1\" 483 51 \"-\" \"HTTPie\"","service":"acquio-api","timestamp":"2025-11-30T13:21:01.602Z"}

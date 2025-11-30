@@ -7,18 +7,21 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 This is a Node.js/Express backend using ES modules and PostgreSQL via Drizzle ORM and Neon.
 
 ### Setup
+
 - Install dependencies:
   - `npm install`
 - Environment configuration:
   - The app uses `dotenv` and reads configuration from `.env` (see variables like `PORT`, `NODE_ENV`, `LOG_LEVEL`, `DATABASE_URL`, `JWT_SECRET`, etc.). Ensure `.env` exists locally before running the server.
 
 ### Running the server
+
 - Start the development server with file watching:
   - `npm run dev`
 - Directly run the app without the dev script (useful in some environments):
   - `node src/index.js`
 
 ### Linting and formatting
+
 - Lint the whole project with ESLint (configured via `eslint.config.js`):
   - `npm run lint`
 - Auto-fix lint issues where possible:
@@ -31,6 +34,7 @@ This is a Node.js/Express backend using ES modules and PostgreSQL via Drizzle OR
   - `npx eslint src/controllers/auth.controller.js`
 
 ### Database (Drizzle ORM + Neon/Postgres)
+
 - Drizzle is configured via `drizzle.config.js` with models in `src/models/*.js` and migrations output in the `drizzle/` directory.
 - Generate migration files from the current schema:
   - `npm run db:generate`
@@ -40,6 +44,7 @@ This is a Node.js/Express backend using ES modules and PostgreSQL via Drizzle OR
   - `npm run db:studio`
 
 ### Tests
+
 - There is currently **no test script** defined in `package.json` and no test runner configured.
 - ESLint includes a special configuration for files under `tests/**/*.js` (Jest-style globals), but that directory does not yet exist. When adding tests, define the appropriate test runner and `npm test` script and update this section.
 
@@ -48,6 +53,7 @@ This is a Node.js/Express backend using ES modules and PostgreSQL via Drizzle OR
 The codebase is a small Express-based HTTP API structured into configuration, routing, controllers, services, models, validations, and utilities.
 
 ### Entry points and HTTP server
+
 - `src/index.js`
   - Loads environment variables via `dotenv/config`.
   - Imports `src/server.js` to start the HTTP server.
@@ -71,6 +77,7 @@ The codebase is a small Express-based HTTP API structured into configuration, ro
     - `app.use('/api/auth', authRoutes);` where `authRoutes` comes from `src/routes/auth.routes.js`.
 
 ### Configuration layer (`src/config`)
+
 - `src/config/logger.js`
   - Creates a Winston logger with:
     - JSON logging and timestamps by default.
@@ -87,6 +94,7 @@ The codebase is a small Express-based HTTP API structured into configuration, ro
     - `sql` — underlying Neon tagged template if raw SQL is required.
 
 ### Domain model and persistence (`src/models` + Drizzle)
+
 - `src/models/user.model.js`
   - Defines the `users` table via `pgTable` from `drizzle-orm/pg-core`:
     - `id` — primary key `serial`.
@@ -102,6 +110,7 @@ The codebase is a small Express-based HTTP API structured into configuration, ro
 The authentication flow is split across multiple layers to keep HTTP concerns, business logic, persistence, validation, and low-level utilities separate.
 
 #### Routing (`src/routes/auth.routes.js`)
+
 - Creates an Express `Router` for `/api/auth` paths.
 - Defined routes:
   - `POST /api/auth/sign-up` — delegates to `signup` in `auth.controller.js`.
@@ -109,6 +118,7 @@ The authentication flow is split across multiple layers to keep HTTP concerns, b
 - All other auth-related endpoints should be added here and wired to their respective controllers.
 
 #### Controller (`src/controllers/auth.controller.js`)
+
 - `signup` controller orchestrates the registration flow:
   - Validates `req.body` using `signupSchema` from `src/validations/auth.validation.js`.
   - On validation failure, responds with HTTP 400 and an error payload:
@@ -124,6 +134,7 @@ The authentication flow is split across multiple layers to keep HTTP concerns, b
     - If the error message signals a duplicate user (currently matching `'User with this email already exists'`), responds with HTTP 409 and an `Email already exists` error response.
 
 #### Service layer (`src/services/auth.service.js`)
+
 - `hashPassword(password)`
   - Uses `bcrypt.hash(password, 10)` to hash the plaintext password.
   - Logs and rethrows a generic error if hashing fails (keeps failure reasons internal to the service layer).
@@ -139,6 +150,7 @@ The authentication flow is split across multiple layers to keep HTTP concerns, b
   - Errors are logged and rethrown for the controller to interpret and map to HTTP responses.
 
 #### Validation (`src/validations/auth.validation.js`)
+
 - Uses `zod` to define request payload schemas:
   - `signupSchema` — shape of the registration payload:
     - `name` — string, trimmed, 2–255 characters.
@@ -151,6 +163,7 @@ The authentication flow is split across multiple layers to keep HTTP concerns, b
 - These schemas decouple validation from controllers and should be reused wherever the same shapes are needed.
 
 #### Utilities (`src/utils`)
+
 - `src/utils/jwt.js`
   - Thin wrapper around `jsonwebtoken` with shared configuration:
     - `JWT_SECRET` read from `process.env.JWT_SECRET` (falls back to a default string if unset).
@@ -177,6 +190,7 @@ The authentication flow is split across multiple layers to keep HTTP concerns, b
   - Used by the auth controller to standardize validation error messaging.
 
 ### Linting and formatting configuration
+
 - `eslint.config.js`
   - Extends `@eslint/js` recommended rules and configures the project for ES modules (`sourceType: 'module'`, `ecmaVersion: 2022`).
   - Declares common Node and browser-like globals to avoid "undefined" warnings (e.g., `process`, `setTimeout`).
@@ -192,6 +206,7 @@ The authentication flow is split across multiple layers to keep HTTP concerns, b
   - Defines the code formatting style enforced by Prettier (2-space indentation, single quotes, trailing commas where valid in ES5, 80-character print width, LF line endings).
 
 ### Database migration configuration
+
 - `drizzle.config.js`
   - Sets Drizzle to read schema definitions from `./src/models/*.js`.
   - Writes generated SQL migrations to the `./drizzle` directory.
